@@ -21,12 +21,12 @@
        - php-cli
        - git
     
-    #- name: Configure firewall for access
-    #  ansible.posix.firewalld:
-    #    permanent: yes
-    #    service: http
-    #    state: enabled
-    #    immediate: yes
+    - name: Configure firewall for access
+      ansible.posix.firewalld:
+        permanent: yes
+        service: http
+        state: enabled
+        immediate: yes
     
     - name: Create Facts Dir on Managed Hosts
       ansible.builtin.file:
