@@ -68,7 +68,7 @@
         path: "{{ facts_dir }}/webserver.fact"
         section: general
         option: serial
-        value: "{{ lookup('ansible.utils.index_of', ansible_play_hosts, 'eq', inventory_hostname) }}"
+        value: "{{ lookup('ansible.utils.index_of', ansible_play_hosts, 'eq', inventory_hostname) | int + 1 }}"
     
     - name: Start the httpd service if needed
       ansible.builtin.service:
