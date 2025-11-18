@@ -7,7 +7,7 @@
       workspace: "{{ workspace }}"
       run_message: "Review infrastructure changes"
       plan_only: true
-      auto_apply: true
+      # auto_apply: true
       tf_timeout: 60
       poll: true
       state: "present"
