@@ -20,6 +20,7 @@ So what are the basics we have set up for you:
 1. A machine credential named RHEL. You use this machine credential to be able to run your playbooks on the providioned servers.
 2. A Custom Credential _Type_ called "Hashicorp Terraform Cloud". You use this later to create your credential.
 3. A token to be able to do stuff in Hashicorp Terraform Cloud. This token is available at: <TBC>
+4. An Execution Environment called "ee-tech-x-change-nl" in AAP that provides all the collections and dependencies you need in this workshop.
 
 ## Building Blocks
 First, you need to create some building blocks.
@@ -42,9 +43,17 @@ organization = "TechXchangeNL"
 token = "YOURTOKENHERE"  
 workspaces { name = "YOURWORKSPACE" }  
 ```
-
 For token, enter the token provided
 For workspace anter the workspace you made in Terraform (you did...right?)
+
+### Inventories
+Create an inventory called "TechXchangeNL" and add a dynamic inventory source to it named "Terraform". This source needs a special plugin and some configuration to do the magic of syncing the statefile. The plugin is in the proviede execution environment and the config that you need to give in the _Source Variables_ are:
+```text
+plugin: cloud.terraform.terraform_state
+backend_type: remote
+```
+
+
 
 
 
