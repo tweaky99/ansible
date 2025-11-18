@@ -24,7 +24,7 @@ So what are the basics we have set up for you:
 5. An Execution Environment called "ee-tech-x-change-nl" in AAP that provides all the collections and dependencies you need in this workshop.
 
 ## Building Blocks
-First, you need to create some building blocks.
+You need to create some building blocks in AAP for this workshop. This document explains what you need to make. When you are done, go back to the README.md in the workshop repo.
 
 note: wherever you can and/or need to specify an Organisation, choose "TechXchangeNL'.
 
