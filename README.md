@@ -90,13 +90,13 @@ For the other playbooks:
 
 ### Workflows
 Having job templates (automation building blocks) we create two workflows:
-1. A workflow that runs the following playbooks in that order:
-   1. update_server
-   2. deploy_webserver
-   3. deploy_website
-2. A workflow that run the following in that specific oprder:
+1. A workflow (name suggestion: "Deploy Web App") that runs the following playbooks in that order:
+   1. sync inventory source Terraform
+   2. update_server
+   3. deploy_webserver
+   4. deploy_website
+2. A workflow (name suggestion: "Deploy Full Web App") that run the following in that specific oprder:
    1. deploy_servers
-   2. sync inventory TechXchangeNL
    3. the proviously created workflow
 
 ### API Token
