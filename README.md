@@ -9,7 +9,7 @@ All future development is on the hashicorp.terraform collection. It is the colle
 ## The basics
 - Where is the Ansible Automation Server? -> [here](https://caap.fvz.ansible-labs.de)
 - What is my username? -> It is the email address you gave us when you signed up for this workshop
-- What is my password? -> It's on the whiteboard in the workshop room
+- What is my password? -> It's on the whiteboard in the workshop room (after you log in you can change your password if you want)
 
 Ansible Automation Platform (AAP) has the notion of "Organizations". For this workshop an Organization named TechXchangeNL has been made and your account is part of that. Everything you do you will do within that organisation.
 
