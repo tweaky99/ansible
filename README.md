@@ -53,8 +53,7 @@ Apart from the already available machine credential, you need a few more..
   workspaces { name = "YOURWORKSPACE" }  
   ```
 
-> You need to have a Terraform token for both credentials. You find this in HCP Terraform under Projects -> defualt project -> settings -> variable sets -> AAP -> TERRAFORM_TOKEN \b
-> For workspace enter the workspace you made in Terraform as part of the prep work you need to do in HCP Terraform
+> You need to have a Terraform token for both credentials. You find this in HCP Terraform under Projects -> defualt project -> settings -> variable sets -> AAP -> TERRAFORM_TOKEN. For workspace enter the workspace you made in Terraform as part of the prep work you need to do in HCP Terraform
 
 ### Inventories
 Create an inventory called "TechXchangeNL" and add a dynamic inventory source to it named "Terraform". This source is of type `Terraform State` and needs some configuration to do the magic of syncing the statefile. Use the provided execution environment `ee-tech-x-change-nl` and the credential you made for it. The config that you need to give in the `Source Variables` is:
