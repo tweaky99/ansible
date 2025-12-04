@@ -1,5 +1,8 @@
-- name: HCP
-  hosts: all
-  tasks:
-  - name: Apply a terraform plan
+- name: Create a new Terraform run with auto-apply
+  hashicorp.terraform.run:
+      workspace: "terraform-houvast"
+      organization: "TechXchangeNL"
+      run_message: "Deploy new hho application version"
+      auto_apply: true
+      state: "present"
 
